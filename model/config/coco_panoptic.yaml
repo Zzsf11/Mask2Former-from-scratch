@@ -1,0 +1,10 @@
+DATASETS:
+  TRAIN: ("coco_2017_train_panoptic",) #Trainer 会使用这个参数来获取 dataset_dict
+  TEST: ("coco_2017_val_panoptic_with_sem_seg",)  # to evaluate instance and semantic performance as well
+INPUT:
+  IMAGE_SIZE: 1024
+  MIN_SCALE: 0.1
+  MAX_SCALE: 2.0
+  FORMAT: "RGB"
+  DATASET_MAPPER_NAME: "coco_panoptic_lsj"
+VERSION: 2 
